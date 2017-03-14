@@ -42,6 +42,7 @@ let g:airline_theme='molokai'
 
 " NERDTree
 autocmd vimenter * NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
