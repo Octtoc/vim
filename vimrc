@@ -1,4 +1,8 @@
 " Basic
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
 set encoding=utf-8
 set nu
 set t_Co=256
@@ -25,10 +29,6 @@ set foldlevel=99
 " au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 au BufNewFile,BufRead *.py
-    \ set tabstop=4 |
-    \ set softtabstop=4 |
-    \ set shiftwidth=4 |
-    \ set textwidth=79 |
     \ set expandtab |
     \ set autoindent |
     \ set fileformat=unix |
