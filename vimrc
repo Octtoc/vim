@@ -43,6 +43,7 @@ let g:airline_theme='molokai'
 " NERDTree
 autocmd vimenter * NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+map <C-n> :NERDTreeToggle<CR>
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
@@ -66,6 +67,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'tomasr/molokai'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'rdnetto/YCM-Generator', { 'branch': 'stable'}
 
 Bundle 'Valloric/YouCompleteMe'
 
