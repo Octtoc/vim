@@ -64,7 +64,7 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <F8> :TagbarToggle<CR>
 
 "Autocomplete
-let g:clang_library_path='/usr/lib/llvm-3.8/lib/libclang.so.1'
+let g:ycm_clangd_args = ['--header-insertion=never']
 
 " Plugins
 set nocompatible
